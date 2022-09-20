@@ -1,0 +1,190 @@
+
+body {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+/* "STATISTIC" */
+
+.app_header{
+
+  position: absolute;
+  width: 352px;
+  height: 84px;
+  left: 270px;
+  top: 108px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 84px;
+
+  color: #000000;
+}
+
+/* Picture of covid */
+
+.app_logo{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 60px;
+  top: 40px;
+  background: url(/src/images/covid.jpg);
+}
+
+/* Search input */
+
+.app_search {
+
+  position: absolute;
+  width: 600px;
+  height: 80px;
+  left: 1260px;
+  top: 110px;
+  font-size: 48px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: hidden;
+}
+
+input::placeholder {
+
+  position: absolute;
+  width: 186px;
+  height: 56px;
+  top: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  color: #B2B2B2;
+}
+
+/* Table */
+
+ table {
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  top: 240px;
+  width: 1800px;
+  color: black;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+th, td, .th_btn, .td_Country {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.th_number, .td_number {
+  border-radius: 20px 0 0 20px;
+}
+
+.th_totalConfirmed, .td_totalConfirmed {
+  border-radius: 0 20px 20px 0;
+} 
+
+th {
+  border-right: 1px solid #FFFFFF;
+  background-color: #2196F3;
+  color: white;
+  height: 80px;
+  text-align: left;
+}
+
+.th_number, .td_number {
+  text-align: center;
+  width: 78px;
+}
+
+.th_btn {
+  color: white;
+  background-color: #2196F3;
+  border:none;
+  box-shadow: none;
+}
+
+.td_Country {
+  color: #000000;
+  background-color: white;
+  border:none;
+  box-shadow: none;
+}
+
+td {
+  border-right: 1px solid  #B2B2B2;
+  background-color: white;
+  height: 80px;
+}
+
+.td_Country, .td_totalConfirmed, .th_btn {
+  padding-left: 23px;
+}
+
+/* Modal Window */
+
+.CountryInfo {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  backdrop-filter: blur(10px);
+}
+
+.leftstr, .rightstr {
+  float: left;
+  width: 50%;
+}
+
+ .rightstr {
+  text-align: right; 
+}
+
+.CountryInfo.open {
+  height: 100%;
+  display: block;
+}
+
+.CountryInfo.close {
+  height: 0;
+  display: none;
+}
+
+.CountryInfo_body {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  margin-top: 5%;
+  padding: 20px;
+  border-radius: 10px;
+  height: 330px;
+}
+
+.CountryInfo_close {
+  margin-left: 33%;
+  font-size: 24px;
+  color: white;
+  border-radius: 20px;
+  background-color: #2196F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 171px;
+  height: 49px;
+}
